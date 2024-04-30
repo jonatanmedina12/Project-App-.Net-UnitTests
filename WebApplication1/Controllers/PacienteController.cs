@@ -47,7 +47,7 @@ namespace WebApplication1.Controllers
             {
                 if (computedHash[i] != paciente.passwordHash[i])
                 {
-                    return Unauthorized("password no valido");
+                    return Unauthorized("nombre no valido");
                 }
 
             }
