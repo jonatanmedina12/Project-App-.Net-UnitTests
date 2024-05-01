@@ -60,6 +60,14 @@ namespace Models.Entidades
         // Constructor de la clase Paciente
         public Paciente()
         {
+            // Establecer valores predeterminados para propiedades requeridas
+            Correo_Electronico = "";
+            Direccion = "";
+            Fecha_Nacimiento = "";
+            Genero = "";
+            NumeroTelefono = "";
+            passwordHash = new byte[0];
+            passwordSalt = new byte[0];
             // Establecer la fecha de admisión como la fecha actual al crear un nuevo Paciente
             Fecha_Admision = DateTime.Now;
         }
