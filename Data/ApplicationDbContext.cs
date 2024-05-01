@@ -10,6 +10,10 @@ using Models.Entidades;
 
 namespace Data
 {
+
+        /// <summary>
+        ///  se crea el contexto de la base de datos y se genera los indicies para cada una 
+        /// </summary>
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
@@ -20,7 +24,19 @@ namespace Data
         }
         public DbSet<Paciente> pacientes { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
 
+      
+            modelBuilder.Entity<Paciente>()
+               .HasIndex(p => p.Nombre)
+               .HasDatabaseName("IX_Paciente_Nombre");
+            modelBuilder.Entity<Paciente>()
+                .HasIndex(p => p.Fecha_Nacimiento)
+                 .HasDatabaseName("IX_Paciente_FechaNacimiento");
+        }
+     
 
     }
 }

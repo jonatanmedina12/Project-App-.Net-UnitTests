@@ -20,7 +20,7 @@ namespace WebApplication1.Extensiones
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = "Ingresar Bearer [espacion] token \r\n\r\n " +
-                                    "Ejemplo: Berear ejoy^8878899999990000",
+                                    "Ejemplo: Bearer ejoy^8878899999990000",
                     Name = "Authorization",
                     In = ParameterLocation.Header,
                     Scheme = "Bearer"
