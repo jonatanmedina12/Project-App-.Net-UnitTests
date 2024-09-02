@@ -21,12 +21,12 @@ Este proyecto es una API RESTful que implementa operaciones CRUD (Crear, Leer, A
 
 1. Clonar el repositorio:
    ```
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/jonatanmedina12/Project-App-.Net-UnitTests.git
    ```
 
 2. Navegar al directorio del proyecto:
    ```
-   cd tu-repositorio
+   cd Project-App-.Net-UnitTests.git
    ```
 
 3. Restaurar las dependencias:
